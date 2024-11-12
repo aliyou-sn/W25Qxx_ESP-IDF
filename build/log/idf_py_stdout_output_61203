@@ -1,0 +1,129 @@
+[1/15] Generating ../../ota_data_initial.bin
+[2/15] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,16K,
+otadata,data,ota,0xd000,8K,
+phy_init,data,phy,0xf000,4K,
+ota_0,app,ota_0,0x10000,1984K,
+ota_1,app,ota_1,0x200000,1984K,
+*******************************************************************************
+[3/15] Generating x509_crt_bundle
+[4/15] Generating ../../x509_crt_bundle.S
+[5/15] Building ASM object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj
+[6/15] Linking C static library esp-idf/mbedtls/libmbedtls.a
+[7/15] Performing configure step for 'bootloader'
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /Users/apple/Desktop/audio_playback_system/file_upload/sdkconfig
+Compiler supported targets: xtensa-esp32-elf
+
+-- Adding linker script /Users/apple/Desktop/v5.1-rc2/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1-rc2-dirty
+-- Adding linker script /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /Users/apple/Desktop/v5.1-rc2/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script /Users/apple/Desktop/v5.1-rc2/esp-idf/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /Users/apple/Desktop/v5.1-rc2/esp-idf/components/bootloader /Users/apple/Desktop/v5.1-rc2/esp-idf/components/bootloader_support /Users/apple/Desktop/v5.1-rc2/esp-idf/components/efuse /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_app_format /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_common /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_hw_support /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_rom /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esp_system /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esptool_py /Users/apple/Desktop/v5.1-rc2/esp-idf/components/freertos /Users/apple/Desktop/v5.1-rc2/esp-idf/components/hal /Users/apple/Desktop/v5.1-rc2/esp-idf/components/log /Users/apple/Desktop/v5.1-rc2/esp-idf/components/bootloader/subproject/main /Users/apple/Desktop/v5.1-rc2/esp-idf/components/bootloader/subproject/components/micro-ecc /Users/apple/Desktop/v5.1-rc2/esp-idf/components/newlib /Users/apple/Desktop/v5.1-rc2/esp-idf/components/partition_table /Users/apple/Desktop/v5.1-rc2/esp-idf/components/soc /Users/apple/Desktop/v5.1-rc2/esp-idf/components/spi_flash /Users/apple/Desktop/v5.1-rc2/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader
+[8/15] Performing build step for 'bootloader'
+[1/2] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 1 ELF section
+Successfully created esp32 image.
+Generated /Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader/bootloader.bin
+[2/2] cd /Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader/esp-idf/esptool_py && /Users/apple/.espressif/python_env/idf5.1_py3.8_env/bin/python /Users/apple/Desktop/v5.1-rc2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader/bootloader.bin
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[9/14] Completed 'bootloader'
+[10/14] Generating ld/sections.ld
+[11/14] Linking CXX executable app-template.elf
+[12/14] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 25 ELF sections
+Successfully created esp32 image.
+Generated /Users/apple/Desktop/audio_playback_system/file_upload/build/app-template.bin
+[13/14] cd /Users/apple/Desktop/audio_playback_system/file_upload/build/esp-idf/esptool_py && /Users/apple/.espressif/python_env/idf5.1_py3.8_env/bin/python /Users/apple/Desktop/v5.1-rc2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/apple/Desktop/audio_playback_system/file_upload/build/partition_table/partition-table.bin /Users/apple/Desktop/audio_playback_system/file_upload/build/app-template.bin
+app-template.bin binary size 0x110960 bytes. Smallest app partition is 0x1f0000 bytes. 0xdf6a0 bytes (45%) free.
+[13/14] cd /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esptool_py && /Users/apple/.espressif/tools/cmake/3.24.0/CMake.app/Contents/bin/cmake -D IDF_PATH=/Users/apple/Desktop/v5.1-rc2/esp-idf -D "SERIAL_TOOL=/Users/apple/.espressif/python_env/idf5.1_py3.8_env/bin/python;;/Users/apple/Desktop/v5.1-rc2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/apple/Desktop/audio_playback_system/file_upload/build -P /Users/apple/Desktop/v5.1-rc2/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/cu.SLAB_USBtoUART -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 app-template.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.7.0
+Serial port /dev/cu.SLAB_USBtoUART
+Connecting......
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 58:bf:25:81:16:98
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00120fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Compressed 26640 bytes to 16673...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000769b... (100 %)
+Wrote 26640 bytes (16673 compressed) at 0x00001000 in 0.8 seconds (effective 266.6 kbit/s)...
+Hash of data verified.
+Compressed 1116512 bytes to 595052...
+Writing at 0x00010000... (2 %)
+Writing at 0x00017f42... (5 %)
+Writing at 0x0003666a... (8 %)
+Writing at 0x000487f7... (10 %)
+Writing at 0x0005628e... (13 %)
+Writing at 0x00062ac7... (16 %)
+Writing at 0x0006d578... (18 %)
+Writing at 0x00072eac... (21 %)
+Writing at 0x0007aff4... (24 %)
+Writing at 0x00082e35... (27 %)
+Writing at 0x0008854a... (29 %)
+Writing at 0x0008e250... (32 %)
+Writing at 0x0009399f... (35 %)
+Writing at 0x00098e2a... (37 %)
+Writing at 0x0009e614... (40 %)
+Writing at 0x000a3eed... (43 %)
+Writing at 0x000a9bb8... (45 %)
+Writing at 0x000af9f4... (48 %)
+Writing at 0x000b5055... (51 %)
+Writing at 0x000ba303... (54 %)
+Writing at 0x000bf858... (56 %)
+Writing at 0x000c4ab7... (59 %)
+Writing at 0x000ca217... (62 %)
+Writing at 0x000cf8ad... (64 %)
+Writing at 0x000d545a... (67 %)
+Writing at 0x000daba1... (70 %)
+Writing at 0x000e039c... (72 %)
+Writing at 0x000e600b... (75 %)
+Writing at 0x000ec40f... (78 %)
+Writing at 0x000f1c16... (81 %)
+Writing at 0x000f72f7... (83 %)
+Writing at 0x000ffc25... (86 %)
+Writing at 0x00108264... (89 %)
+Writing at 0x0010e085... (91 %)
+Writing at 0x00113b0e... (94 %)
+Writing at 0x0011988d... (97 %)
+Writing at 0x0011eac2... (100 %)
+Wrote 1116512 bytes (595052 compressed) at 0x00010000 in 15.3 seconds (effective 584.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 128...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (128 compressed) at 0x00008000 in 0.1 seconds (effective 287.1 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.1 seconds (effective 445.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

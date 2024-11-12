@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/apple/Desktop/audio_playback_system/file_upload/build/CMakeFiles/bootloader
+/Users/apple/Desktop/audio_playback_system/file_upload/build/CMakeFiles/bootloader.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/CMakeFiles/bootloader-complete.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/apple/Desktop/audio_playback_system/file_upload/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
